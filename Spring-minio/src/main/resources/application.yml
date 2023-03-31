@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+logging:
+  config: classpath:log4j2.xml
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 1000MB
+      
+#minio配置
+minio:
+  url: http://192.168.7.250:9000  #对象存储服务的URL
+  accessKey: minioadmin #Access key账户
+  secretKey: minioadmin  #Secret key密码
